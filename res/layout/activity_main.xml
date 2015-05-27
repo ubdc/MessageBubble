@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical" >
+    
+    <com.example.messagebubble.MessageBubble
+        android:id="@+id/bb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:progress="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp" />
+
+    <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        
+        <TableRow android:gravity="center_vertical">
+            
+          	<TextView 
+          	    android:text="信息数"/>
+          	
+		    <SeekBar 
+		        android:id="@+id/numSeekBar"
+		        android:layout_marginLeft="16dp"
+		        android:max="100"
+		        android:progress="1"/>
+	    </TableRow>
+	
+        <TableRow android:gravity="center_vertical" android:layout_marginTop="16dp">
+            
+          	<TextView 
+          	    android:text="文字大小"/>
+          	
+		    <SeekBar 
+		        android:id="@+id/textSizeSeekBar"
+		        android:layout_marginLeft="16dp"
+		        android:max="60"
+		        android:progress="16"/>
+        </TableRow>
+	    
+        <TableRow android:gravity="center_vertical" android:layout_marginTop="16dp">
+            
+          	<TextView 
+          	    android:text="文字颜色"/>
+          	
+		    <LinearLayout 
+		        android:orientation="horizontal">
+		        
+		        <View 
+		            android:id="@+id/textColorWhite"
+		            android:layout_width="48dp"
+		            android:layout_height="48dp"
+		            android:layout_marginLeft="10dp"
+		            android:background="@drawable/color_white"/>
+		        
+		        <View 
+		            android:id="@+id/textColorRed"
+		            android:layout_width="48dp"
+		            android:layout_height="48dp"
+		            android:layout_marginLeft="10dp"
+		            android:background="@drawable/color_red"/>
+		        
+		        <View 
+		            android:id="@+id/textColorYellow"
+		            android:layout_width="48dp"
+		            android:layout_height="48dp"
+		            android:layout_marginLeft="10dp"
+		            android:background="@drawable/color_yellow"/>
+		        
+		        <View 
+		            android:id="@+id/textColorBlue"
+		            android:layout_width="48dp"
+		            android:layout_height="48dp"
+		            android:layout_marginLeft="10dp"
+		            android:background="@drawable/color_blue"/>
+		    </LinearLayout>
+        </TableRow>
+	    
+        <TableRow android:gravity="center_vertical" android:layout_marginTop="16dp">
+            
+          	<TextView 
+          	    android:text="背景颜色"/>
+          	
+		    <LinearLayout 
+		        android:orientation="horizontal">
+		        
+		        <View 
+		            android:id="@+id/bgColorWhite"
+		            android:layout_width="48dp"
+		            android:layout_height="48dp"
+		            android:layout_marginLeft="10dp"
+		            android:background="@drawable/color_white"/>
+		        
+		        <View 
+		            android:id="@+id/bgColorRed"
+		            android:layout_width="48dp"
+		            android:layout_height="48dp"
+		            android:layout_marginLeft="10dp"
+		            android:background="@drawable/color_red"/>
+		        
+		        <View 
+		            android:id="@+id/bgColorYellow"
+		            android:layout_width="48dp"
+		            android:layout_height="48dp"
+		            android:layout_marginLeft="10dp"
+		            android:background="@drawable/color_yellow"/>
+		        
+		        <View 
+		            android:id="@+id/bgColorBlue"
+		            android:layout_width="48dp"
+		            android:layout_height="48dp"
+		            android:layout_marginLeft="10dp"
+		            android:background="@drawable/color_blue"/>
+		    </LinearLayout>
+        </TableRow>
+	    
+        <TableRow android:gravity="center_vertical" android:layout_marginTop="16dp">
+            
+          	<TextView 
+          	    android:text="padding"/>
+          	
+		    <SeekBar 
+		        android:id="@+id/paddingSeekBar"
+		        android:layout_marginLeft="16dp"
+		        android:max="50"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
